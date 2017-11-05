@@ -65,7 +65,7 @@ class PathPart {
 
 function SomethingClicked(event : MouseEvent)
 {
-    var k = document.getElementById("kitas");
+    var docPath = document.getElementById("docPath") as HTMLInputElement;
     var target = event.target as HTMLElement;
     var tree = null as PathPart;
     while(target != null && target.tagName != "BODY")
@@ -87,8 +87,18 @@ function SomethingClicked(event : MouseEvent)
         {
             check.style.border = "solid 1px red";
             console.log(check.innerText);
+            docPath.value = path;
         }
     }
-    
 }
 
+function iframeLoaded(event : UIEvent)
+{
+    var t = event.target as HTMLIFrameElement;
+    // t.contentWindow.setTimeout(()=>{ alert("Ktabai") }, 1000);
+    // t.contentWindow.eval('alert("b;a;a")');
+    // t.contentWindow.onclick = SomethingClicked;
+    // var d = t.contentWindow.document;
+    // t.contentWindow.addEventListener("click", SomethingClicked);
+    // alert(t.contentWindow.document.URL);
+}

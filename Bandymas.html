@@ -3,11 +3,22 @@
         <title></title>
         <script type="text/javascript" src="FindObject.js" ></script>
     </head>
-    <body onclick="SomethingClicked(event)">
+    <body>
+        <!-- onclick="SomethingClicked(event)" -->
 <div>Tet
     <span id="sp">bl <b>jd</b>aba</span>
     <span class="styled">styled</span>
 </div>
-<div id="kitas"></div>
+<div>
+    <input type="text" id="goToAddress" value="Hello.html" width="250" />
+    <input type="button" value="go" />
+</div>
+<div>
+    <input type="text" id="docPath" value="" width="250" />
+    <input type="button" value="find" />
+</div>
+<iframe src="Hello.html" width="100%" height="50%" onload="iframeLoaded(event)">
+
+</iframe>
     </body>
 </html>
