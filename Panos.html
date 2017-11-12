@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <title>Kaip išsirinkti Pana</title>
+
+        <Meta charset="utf-8">
+
+        <script type="text/javascript">
+
+function getInputValueAsNumber(inputId)
+{
+return parseFloat(document.getElementById(inputId).value);
+}
+    
+
+        function IsrinktiGeriausia()
+        {
+            var Pana1 = document.getElementById("vv1").value;
+            var Pana2 = document.getElementById("vv2").value;
+            var Pana3 = document.getElementById("vv3").value;
+            var Pana4 = document.getElementById("vv4").value;
+
+            var MGR = getInputValueAsNumber("MaistoGaminimasR");
+            var IR = parseFloat(IsvaizdaR.value);
+            var FR = parseFloat(FainumasR.value);
+            var BZIR = parseFloat(BeZalinguIprociuR.value);
+
+            var Mg1 = parseFloat(mg1.value);
+            var Mg2 = parseFloat(mg2.value);
+            var Mg3 = parseFloat(mg3.value);
+            var Mg4 = parseFloat(mg4.value);
+
+            var I1 = parseFloat(i1.value);
+            var I2 = parseFloat(i2.value);
+            var I3 = parseFloat(i3.value);
+            var I4 = parseFloat(i4.value);
+
+            var F1 = parseFloat(f1.value);
+            var F2 = parseFloat(f2.value);
+            var F3 = parseFloat(f3.value);
+            var F4 = parseFloat(f4.value);
+
+            var Zin1 = parseFloat(zin1.value);
+            var Zin2 = parseFloat(zin2.value);
+            var Zin3 = parseFloat(zin3.value);
+            var Zin4 = parseFloat(zin4.value);
+
+            var Įvertinimas1 = MGR * Mg1 + IR * I1 + FR * F1 + BZIR * Zin1;
+            var a1 = document.getElementById("a1");
+            a1.innerText = Įvertinimas1
+
+            var Įvertinimas2 = MGR * Mg2 + IR * I2 + FR * F2 + BZIR * Zin2;
+            var a2 = document.getElementById("a2");
+            a2.innerText = Įvertinimas2
+            
+            var Įvertinimas3 = MGR * Mg3 + IR * I3 + FR * F3 + BZIR * Zin3;
+            var a3 = document.getElementById("a3");
+            a3.innerText = Įvertinimas3
+            
+            var Įvertinimas4 = MGR * Mg4 + IR * I4 + FR * F4 + BZIR * Zin4;
+            var a4 = document.getElementById("a4");
+            a4.innerText = Įvertinimas4
+
+            var max = Įvertinimas1
+            var GeriausiaČiolė = Pana1
+
+            if(max<Įvertinimas2)
+            {
+            max = Įvertinimas2
+            GeriausiaČiolė = Pana2
+            }
+            if(max<Įvertinimas3)
+            {
+            max = Įvertinimas3
+            GeriausiaČiolė = Pana3
+            } 
+            if(max<Įvertinimas4)
+            {
+            max = Įvertinimas4
+            GeriausiaČiolė = Pana3
+            } 
+
+            vardas.innerText = GeriausiaČiolė
+            Rez.innerText = max
+        }
+
+        </script>
+        <style type="text/css">
+            
+     td.ivertinimas
+    {
+    text-align: right;
+    font-weight: bolder;
+    }
+            
+        </style>
+    </head>
+    <body>
+            <table style="width:80%">
+                <tr>
+                    <th>Kriterijus</th>
+                    <th> <input type="text" id="vv1"/> </th>
+                    <th> <input type="text" id="vv2"/> </th>
+                    <th> <input type="text" id="vv3"/> </th>
+                    <th> <input type="text" id="vv4"/> </th>
+                    <th>Kriterijaus svoris (r)</th>
+                </tr>
+                <tr>
+                    <th>Maisto gaminimas</th>
+                    <td> <input type="text" id="mg1" value="" /> </td>
+                    <td> <input type="text" id="mg2" value="" /> </td>
+                    <td> <input type="text" id="mg3" value="" /> </td>
+                    <td> <input type="text" id="mg4" value="" /> </td>
+                    <td> <input type="text" id="MaistoGaminimasR" value="0.25" /> </td>
+                </tr>
+                <tr>
+                    <th>Išvaizda</th>
+                    <td> <input type="text" id="i1" value="" /> </td>
+                    <td> <input type="text" id="i2" value="" /> </td>
+                    <td> <input type="text" id="i3" value="" /> </td>
+                    <td> <input type="text" id="i4" value="" /> </td>
+                    <td> <input type="text" id="IsvaizdaR" value="0.2" /> </td>
+                </tr>
+                <tr>
+                    <th>Fainumas</th>
+                    <td> <input type="text" id="f1" value="" /> </td>
+                    <td> <input type="text" id="f2" value="" /> </td>
+                    <td> <input type="text" id="f3" value="" /> </td>
+                    <td> <input type="text" id="f4" value="" /> </td>
+                    <td> <input type="text" id="FainumasR" value="0.3" /> </td>
+                </tr>
+                <tr>
+                    <th>Žalingų įpročių nebuvimas</th>
+                    <td> <input type="text" id="zin1" value="" /> </td>
+                    <td> <input type="text" id="zin2" value="" /> </td>
+                    <td> <input type="text" id="zin3" value="" /> </td>
+                    <td> <input type="text" id="zin4" value="" /> </td>
+                    <td> <input type="text" id="BeZalinguIprociuR" value="0.25" /> </td>
+                </tr>
+                <tr>
+                    <th>Bendras panos įvertinimas</th>
+                    <td id="a1" class="ivertinimas" /> </td>
+                    <td id="a2" class="ivertinimas" /> </td>
+                    <td id="a3" class="ivertinimas" /> </td>
+                    <td id="a4" class="ivertinimas" /> </td>
+                </tr>
+            </table>
+            <input type="button" value="Išrinkti geriausią" onclick="IsrinktiGeriausia()" />
+            <div id="vardas"></div>
+            <div id="Rez"></div>
+                
+    </body>
+    </html>
