@@ -1,1 +1,3 @@
-<?php phpinfo(); ?>
+<?php  
+echo "Ivestas vardas: " + $_GET["vardas"]
+?>
