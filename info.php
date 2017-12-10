@@ -3,10 +3,6 @@
     <title>Bandom php<title>
 </head>
 <body>
-<?php  
-echo "Ivestas vardas: " . $_GET['vardas'] 
-?> 
-</br>
-Kazkoks tekstas <?=$_GET['atsakymas']  ?>
+ysdfui gsfdu ygsuif guifs
 </body>
 </html>
