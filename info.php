@@ -18,6 +18,6 @@ else
 ?>
 <br />
 Atsakymas
-<?=$_GET['atsakymas'] ?>
+<?=$_POST['atsakymas'] ?>
 </body>
 </html>
