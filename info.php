@@ -9,7 +9,7 @@
 $vardas = $_GET['vardas'];
 if($vardas == "Donatas")
 {
-    echo "Labas Donatai"
+    echo "Labas Donatai";
 }
 else
 {
