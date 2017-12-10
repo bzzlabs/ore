@@ -1,3 +1,3 @@
 <?php  
-echo "Ivestas vardas: " + $_GET["vardas"]
-?>
+echo "Ivestas vardas: " . $_GET['vardas'] 
+?> 
