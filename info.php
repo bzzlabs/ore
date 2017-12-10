@@ -6,7 +6,15 @@
 <body>
     Vardas: 
 <?php 
-echo $_GET['vardas'];
+$vardas = $_GET['vardas'];
+if($vardas == "Donatas")
+{
+    echo "Labas Donatai"
+}
+else
+{
+    echo "Labas " . $vardas;
+}
 ?>
 <br />
 Atsakymas
