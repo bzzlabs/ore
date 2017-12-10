@@ -7,6 +7,6 @@
 echo "Ivestas vardas: " . $_GET['vardas'] 
 ?> 
 </br>
-Kazkoks tekstas <?php=$_GET['atsakymas']  ?>
+Kazkoks tekstas <?=$_GET['atsakymas']  ?>
 </body>
 </html>
