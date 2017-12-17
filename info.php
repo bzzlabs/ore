@@ -1,17 +1,20 @@
 <?php 
-$failoVieta = $_SERVER['DOCUMENT_ROOT']."/Rezzultatai.csv";
+$failoVieta = $_SERVER['DOCUMENT_ROOT']."\Rezzultatai.txt";
 $failas = fopen($failoVieta, "w");
+// pasitikrinam ar pavyko atidaryti failą rašymui:
 if($failas === FALSE)
 {
     echo "Nepavyko atidaryti failo rašymui";
 }
 else
 {
+    // Jei Pavyko, į failą įrašom kažkokią informaciją: 
     fwrite($failas, "Irasau i faila varda ir atsakyma\r\n");
     fwrite($failas, $_POST['vardas']."\r\n");
     fwrite($failas, $_POST['atsakymas']."\r\n");
     fclose($failas);
 }
+// atspausdinam kur ant serverio yra failas:
 echo $failoVieta;
 ?>
 <html>
@@ -35,5 +38,7 @@ else
 <br />
 Atsakymas
 <?=$_POST['atsakymas'] ?>
+<br/>
+<a href="/Rezzultatai.txt">Parsisiusti rezultatu faila</a>
 </body>
 </html>
