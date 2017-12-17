@@ -1,5 +1,6 @@
 <?php 
-$failas = fopen("/Rezzultatai.csv", "w");
+$failoVieta = $_SERVER['DOCUMENT_ROOT']."/Rezzultatai.csv";
+$failas = fopen($failoVieta, "w");
 if($failas === FALSE)
 {
     echo "Nepavyko atidaryti failo rašymui";
@@ -11,6 +12,7 @@ else
     fwrite($failas, $_POST['atsakymas']."\r\n");
     fclose($failas);
 }
+echo $failoVieta;
 ?>
 <html>
 <head>
