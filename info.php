@@ -1,3 +1,17 @@
+<?php 
+$failas = fopen("/Rezzultatai.csv", "w");
+if($failas === FALSE)
+{
+    echo "Nepavyko atidaryti failo rašymui";
+}
+else
+{
+    fwrite($failas, "Irasau i faila varda ir atsakyma\r\n");
+    fwrite($failas, $_POST['vardas']."\r\n");
+    fwrite($failas, $_POST['atsakymas']."\r\n");
+    fclose($failas);
+}
+?>
 <html>
 <head>
     <title>Bendras darbas</title>
