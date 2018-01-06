@@ -1,6 +1,6 @@
 <?php
 $failoVieta = $_SERVER['DOCUMENT_ROOT']."\Dilanas.txt";
-$failas = fopen($failoVieta, "w");
+$failas = fopen($failoVieta, "a");
 if($failas === FALSE)
 {
     echo "Nepavyko Atidaryti Failo";
