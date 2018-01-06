@@ -1,5 +1,5 @@
 <?php 
-$failovieta = $_SERVER['DOCUMENT_ROOT']."\kebabai.txt";
+$failovieta = $_SERVER['DOCUMENT_ROOT']."\\kebabai.txt";
 $failas = fopen($failoVieta, "w");
 //pasitikrinti:
 if(failas === FALSE)
