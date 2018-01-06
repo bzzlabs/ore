@@ -32,12 +32,12 @@ else
         }
         ?>
         <br>
-        Slaptazodis:
+        Slaptazodis: 
         <?php
         $Slaptazodis = $_POST['Slaptazodis'];
         ?>
         <br>
-        Daugiau informacijos <a href="/Duomenys.txt" />
+        Daugiau informacijos <a href="\Duomenys.txt" />
     </body>
 </html>
 
