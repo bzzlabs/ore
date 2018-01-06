@@ -1,5 +1,5 @@
 <?php 
-$failovieta = $_SERVER['DOCUMENT_ROOT']."\Rezzultatai.txt";
+$failovieta = $_SERVER['DOCUMENT_ROOT']."\kebabai.txt";
 $failas = fopen($failoVieta, "w");
 //pasitikrinti:
 if(failas === FALSE)
@@ -11,7 +11,7 @@ else
     //Jei pavyko, irasyti kazokia informacija:
     fwrite($failas, "Irasau i faila varda ir atsakyma\r\n");
     fwrite($failas, $_POST['Romka']."\r\n");
-    fwrite($failas, $_POST['teisingai']."\r\n");
+    fwrite($failas, $_POST['teisingas']."\r\n");
     fclose($failas);
 }
 // Atspausdinam kur ant serverio yra failas:
@@ -37,9 +37,9 @@ echo $failovieta;
     ?>
     <br />
     atsakymas
-    <?=$_POST['Teisingai'] ?>
+    <?=$_POST['teisingas'] ?>
 <br/>
-<a href="/Rezzultatai.txt">Parsisiusti rezultatu faila</a>
+<a href="/kebabai.txt">Parsisiusti rezultatu faila</a>
 </body>
 </html>
     
