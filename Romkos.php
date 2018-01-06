@@ -2,7 +2,7 @@
 $failovieta = $_SERVER['DOCUMENT_ROOT']."\Rezzultatai.txt";
 $failas = fopen($failoVieta, "w");
 //pasitikrinti:
-$if(failas === FALSE)
+if(failas === FALSE)
 {
     echo "Nepavyko"
 }
