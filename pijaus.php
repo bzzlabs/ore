@@ -9,7 +9,7 @@ if($failas === FALSE)
 }
 else
 {
-     Jei Pavyko, į failą įrašom kažkokią informaciją: 
+    // Jei Pavyko, į failą įrašom kažkokią informaciją: 
         if($_POST['Vardas'] == "Lukas")
         {
             fwrite($failas, $_POST['Vardas']."\r\n");
