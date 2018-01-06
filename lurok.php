@@ -7,7 +7,6 @@ if($failas === FALSE)
 }
 else
 {
-     
     fwrite($failas, "Parodomas prisijungimo vardas ir slaptazodis\r\n");
     fwrite($failas, $_POST['Vardas']."\r\n");
     fwrite($failas, $_POST['Slaptazodis']."\r\n");
@@ -33,13 +32,13 @@ else
         ?>
         <br>
         Slaptazodis: 
-        <?php
-        $Slaptazodis = $_POST['Slaptazodis'];
-        ?>
+        <?=$_POST['Slaptazodis'] ?>
         <br>
         <a href="\Duomenys.txt" />Daugiau informacijos</a>
     </body>
 </html>
+
+
 
 
         

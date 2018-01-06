@@ -6,14 +6,6 @@ if($failas === FALSE)
 {
     echo "Nepavyko atidaryti failo rašymui";
 }
-else
-{
-     
-    fwrite($failas, "Irasau i faila varda ir atsakyma\r\n");
-    fwrite($failas, $_POST['numeris']."\r\n");
-    fwrite($failas, $_POST['Vardas']."\r\n");
-    fclose($failas);
-}
 echo $failoVieta."\r\n";
 ?>
 <html>
@@ -22,6 +14,9 @@ echo $failoVieta."\r\n";
     <meta charset="utf-8" />
 </head>
 <body>
+    Numeriukas:
+    <?=$_POST['numeris'] ?>
+    <br />
     <a href="numeriukuSpintele.txt">Numeriukai</a>
 </body>
 </html>
