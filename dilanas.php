@@ -17,7 +17,7 @@ fclose($failas);
 if($vardas == "Romka")
 {
     // teisingai
-    header('Location: pijus.html');    
+    header('Location: pijaus.html');    
 }
 else
 {  
