@@ -2,18 +2,18 @@
 $failoVieta = $_SERVER['DOCUMENT_ROOT']."\\numeriukuSpintele.txt";
 $failas = fopen($failoVieta, "w");
 
-if($failas === FALSE)
-{
-    echo "Nepavyko atidaryti failo rašymui";
+// if($failas === FALSE)
+// {
+//     echo "Nepavyko atidaryti failo rašymui";
 
-else
-{
+// else
+// {
      
-    fwrite($failas, "Irasau i faila varda ir atsakyma\r\n");
-    fwrite($failas, $_POST['numeris']."\r\n");
-    fwrite($failas, $_POST['Vardas']."\r\n");
-    fclose($failas);
-}
+//     fwrite($failas, "Irasau i faila varda ir atsakyma\r\n");
+//     fwrite($failas, $_POST['numeris']."\r\n");
+//     fwrite($failas, $_POST['Vardas']."\r\n");
+//     fclose($failas);
+// }
 echo $failoVieta."\r\n";
 ?>
 <html>
