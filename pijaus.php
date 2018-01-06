@@ -13,7 +13,7 @@ else
         if($_POST['Vardas'] == "Lukas")
         {
             fwrite($failas, $_POST['Vardas']." gavo i aki"."\r\n");
-            echo $_POST['Vardas']." gavo i aki \r\n"  ;
+            echo $_POST['Vardas']." gavo i aki"."\r\n"  ;
         }
         else
         {
