@@ -1,6 +1,6 @@
 <?php 
 $failovieta = $_SERVER['DOCUMENT_ROOT']."\\kebabai.txt";
-$failas = fopen($failoVieta, "w");
+/*$failas = fopen($failoVieta, "w");
 //pasitikrinti:
 if(failas === FALSE)
 {
@@ -13,7 +13,7 @@ else
     fwrite($failas, $_POST['Romka']."\r\n");
     fwrite($failas, $_POST['teisingas']."\r\n");
     fclose($failas);
-}
+}*/
 // Atspausdinam kur ant serverio yra failas:
 echo $failovieta;
 ?>
