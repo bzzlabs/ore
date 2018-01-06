@@ -10,10 +10,10 @@ if($failas === FALSE)
 else
 {
      Jei Pavyko, į failą įrašom kažkokią informaciją: 
-        if($vardas == "Lukas")
+        if($_POST['Vardas'] == "Lukas")
         {
-            fwrite($failas, $vardas."\r\n");
-            echo $vardas "gavo i aki"  ;
+            fwrite($failas, $_POST['Vardas']."\r\n");
+            echo $_POST['Vardas']." gavo i aki"  ;
         }
         else
         {
