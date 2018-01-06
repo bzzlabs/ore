@@ -39,6 +39,7 @@ else
 Atsakymas
 <?=$_POST['atsakymas'] ?>
 <br/>
+matosi
 <a href="/Rezzultatai.txt">Parsisiusti rezultatu faila</a>
 </body>
 </html>
