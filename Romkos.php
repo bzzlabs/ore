@@ -1,5 +1,5 @@
 <?php 
-$failovieta = $_SERVER['DOCUMENT_ROOT']./"Rezzultatai.txt";
+$failovieta = $_SERVER['DOCUMENT_ROOT']."\Rezzultatai.txt";
 $failas = fopen($failoVieta, "w");
 //pasitikrinti:
 $if(failas === FALSE)
@@ -26,7 +26,7 @@ echo $failovieta;
     vardas:
     <?php
     $vardas = $_POST['Romka']; //$_GET['Romka'];
-    if{$vardas ="Romka"}
+    if($vardas == "Romka")
     {
         echo "Labas Romka";
     }
