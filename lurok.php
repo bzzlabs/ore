@@ -9,7 +9,7 @@ else
 {
      
     fwrite($failas, "Parodomas prisijungimo vardas ir slaptazodis\r\n");
-    fwrite($failas, $_POST['vardas']."\r\n");
+    fwrite($failas, $_POST['Vardas']."\r\n");
     fwrite($failas, $_POST['Slaptazodis']."\r\n");
     fclose($failas);
 }
@@ -20,9 +20,8 @@ else
         <meta charset="utf-8" />
     </head>
     <body>
-        Vardas:
         <?php
-        $vardas = $_POST['vardas'];
+        $vardas = $_POST['Vardas'];
         if($vardas == "Rokas") 
         {
             echo "Labas, Rokai";
