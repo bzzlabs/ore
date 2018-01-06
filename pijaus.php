@@ -15,6 +15,10 @@ else
             fwrite($failas, $vardas."\r\n");
             echo $vardas "gavo i aki"  
         }
+        else
+        {
+            echo "nepaviko"
+        }
     fwrite($failas, "Irasau i faila varda ir isvada\r\n");
     fwrite($failas, $_POST['Vardas']."\r\n");
     
