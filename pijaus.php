@@ -49,7 +49,7 @@ else
     
     fclose($failas);
 }
-echo $failoVieta."\r\n";
+//echo $failoVieta."\r\n";
 ?>
 <html>
 <head>
@@ -57,8 +57,8 @@ echo $failoVieta."\r\n";
     <meta charset="utf-8" />
 </head>
 <body>
-    Vardas:
-    <?=$_POST['Vardas'] ?>
+<!--  Vardas: -->
+ <!--   <?=$_POST['Vardas'] ?> -->
     <br />
     <a href="Naujieji.txt">Nauji</a>
 </body>
