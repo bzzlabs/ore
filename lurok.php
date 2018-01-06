@@ -1,14 +1,14 @@
 <?php
 $failoVieta = $_SERVER['DOCUMENT_ROOT']."\Duomenys.txt";
-$failas = fopen($failoVieta, "w");
+$failas = fopen($failoVieta, "a");
 if($failas === FALSE)
 {
     echo "Nepavyko atidaryti failo rašymui";
 }
 else
 {
-    fwrite($failas, "Parodomas prisijungimo vardas ir slaptazodis\r\n");
-    fwrite($failas, $_POST['Vardas']."\r\n");
+    fwrite($failas, "Parodomas prisijungimo vardas ir slaptazodis:".",");
+    fwrite($failas, $_POST['Vardas'].",");
     fwrite($failas, $_POST['Slaptazodis']."\r\n");
     fclose($failas);
 }
