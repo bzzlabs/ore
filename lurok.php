@@ -37,7 +37,7 @@ else
         $Slaptazodis = $_POST['Slaptazodis'];
         ?>
         <br>
-        Daugiau informacijos <a href="\Duomenys.txt" />
+        <a href="\Duomenys.txt" />Daugiau informacijos</a>
     </body>
 </html>
 
