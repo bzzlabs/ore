@@ -4,7 +4,7 @@ $failas = fopen($failoVieta, "w");
 //pasitikrinti:
 if($failas === FALSE)
 {
-    echo "Nepavyko"
+    echo "Nepavyko";
 }
 else 
 {
