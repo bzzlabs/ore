@@ -1,7 +1,7 @@
 <?php
 $failoVieta = $_SERVER['DOCUMENT_ROOT']."\Duomenys.txt";
 $failas = fopen($failoVieta, "w");
-if($failas === FALSE)
+/*if($failas === FALSE)
 {
     echo "Nepavyko atidaryti failo rašymui";
 }
@@ -12,7 +12,7 @@ else
     fwrite($failas, $_POST['vardas']."\r\n");
     fwrite($failas, $_POST['Slaptazodis']."\r\n");
     fclose($failas);
-}
+}*/
 ?>
 <html>
     <head>
