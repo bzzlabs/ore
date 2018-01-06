@@ -1,5 +1,5 @@
 <?php
-$failoVieta = $_SERVER['DOCUMENT_ROOT']."\numeriukuSpintele.txt";
+$failoVieta = $_SERVER['DOCUMENT_ROOT']."\\numeriukuSpintele.txt";
 $failas = fopen($failoVieta, "w");
 
 if($failas === FALSE)
