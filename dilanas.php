@@ -14,6 +14,16 @@ fwrite($failas, $vardas.",");
 fwrite($failas, $_POST['Numeriukas']."\r\n");
 fclose($failas);
 }
+if($vardas == "Romka")
+{
+    // teisingai
+    header('Location: pijus.html');    
+}
+else
+{  
+header('Location: dilanas.html');    
+}
+
 echo $failoVieta;
 ?>
 <html>
