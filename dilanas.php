@@ -9,8 +9,8 @@ else
 {
 // Jei Pavyko, į failą įrašom kažkokią informaciją: 
 fwrite($failas, "Irasau i faila varda ir atsakyma\r\n");
-fwrite($failas, $_GET['Vardas']."\r\n");
-fwrite($failas, $_GET['Numeriukas']."\r\n");
+fwrite($failas, $_POST['Vardas']."\r\n");
+fwrite($failas, $_POST['Numeriukas']."\r\n");
 fclose($failas);
 }
 echo $failoVieta;
