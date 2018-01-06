@@ -1,6 +1,7 @@
 <?php
 $failoVieta = $_SERVER['DOCUMENT_ROOT']."\Dilanas.txt";
 $failas = fopen($failoVieta, "a");
+$vardas = $_POST['Vardas'];
 if($failas === FALSE)
 {
     echo "Nepavyko Atidaryti Failo";
@@ -9,7 +10,7 @@ else
 {
 // Jei Pavyko, į failą įrašom kažkokią informaciją: 
 fwrite($failas, "Vardas ir Numeris,");
-fwrite($failas, $_POST['Vardas'].",");
+fwrite($failas, $vardas.",");
 fwrite($failas, $_POST['Numeriukas']."\r\n");
 fclose($failas);
 }
