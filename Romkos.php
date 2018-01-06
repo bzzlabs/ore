@@ -26,7 +26,7 @@ echo $failovieta;
     vardas:
     <?php
     $vardas = $_POST['Romka']; //$_GET['Romka'];
-    if{$vardas ="Romka"}
+    if($vardas == "Romka")
     {
         echo "Labas Romka";
     }
