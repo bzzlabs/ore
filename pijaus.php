@@ -1,6 +1,7 @@
 <?php
 $failoVieta = $_SERVER['DOCUMENT_ROOT']."\\numeriukuSpintele.txt";
 $failas = fopen($failoVieta, "w");
+$vardas = $_POST['Vardas'];
 
 if($failas === FALSE)
 {
@@ -9,9 +10,9 @@ if($failas === FALSE)
 else
 {
     // Jei Pavyko, į failą įrašom kažkokią informaciją: 
-        if($_POST['Vardas'] == "Lukas")
+        if($vardas == "Lukas")
         {
-            fwrite($failas,$_POST['Vardas']." gavo i aki") 
+            echo $vardas "gavo i aki"  
         }
     fwrite($failas, "Irasau i faila varda ir isvada\r\n");
     fwrite($failas, $_POST['Vardas']."\r\n");
