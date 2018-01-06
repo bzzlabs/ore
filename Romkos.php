@@ -9,9 +9,9 @@ if($failas === FALSE)
 else 
 {
     //Jei pavyko, irasyti kazokia informacija:
-    fwrite($failas, "Irasau i faila varda ir atsakyma\r\n");
-    fwrite($failas, $_POST['Romka']."\r\n");
-    fwrite($failas, $_POST['teisingas']."\r\n");
+    fwrite($failas, "Irasau i faila varda ir atsakyma,");
+    fwrite($failas, $_POST['Romka'].",");
+    fwrite($failas, $_POST['teisingas'].",");
     fclose($failas);
 }
 // Atspausdinam kur ant serverio yra failas:
