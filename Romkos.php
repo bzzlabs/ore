@@ -1,6 +1,6 @@
 <?php 
 $failovieta = $_SERVER['DOCUMENT_ROOT']."\kebabai.txt";
-$failas = fopen($failoVieta, "w");
+$failas = fopen($failovieta, "w");
 //pasitikrinti:
 if($failas === FALSE)
 {
