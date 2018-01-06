@@ -17,25 +17,25 @@ else
             echo $_POST['Vardas']." gavo i aki"."\r\n"  ;
         }
 
-        if($_POST['Vardas'] == "Dilanas")
+        elseif($_POST['Vardas'] == "Dilanas")
         {
             echo $_POST['Vardas']." atsidure policijoj"."\r\n";
             fwrite($failas, $_POST['Vardas']." atsidure policijoj"."\r\n");
         }
 
-        if($_POST['Vardas'] == "Romka")
+        elseif($_POST['Vardas'] == "Romka")
         {
             echo $_POST['Vardas']." tusino mieste"."\r\n";
             fwrite($failas, $_POST['Vardas']." tusino mieste"."\r\n");
         }
 
-        if($_POST['Vardas'] == "Rokas")
+        elseif($_POST['Vardas'] == "Rokas")
         {
             echo $_POST['Vardas']." svente su savo panele"."\r\n";
             fwrite($failas, $_POST['Vardas']." svente su savo panele"."\r\n");
         }
 
-        if($_POST['Vardas'] == "Donatas")
+        elseif($_POST['Vardas'] == "Donatas")
         {
             echo $_POST['Vardas']." - jo keliai nezinomi..."."\r\n";
             fwrite($failas, $_POST['Vardas']."  - jo keliai nezinomi..."."\r\n");
