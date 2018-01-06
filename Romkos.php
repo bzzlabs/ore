@@ -2,7 +2,7 @@
 $failovieta = $_SERVER['DOCUMENT_ROOT']."\Rezzultatai.txt";
 $failas = fopen($failoVieta, "w");
 //pasitikrinti:
-$if(failas === FALSE)
+/*$if(failas === FALSE)
 {
     echo "Nepavyko"
 }
@@ -15,7 +15,7 @@ else
     fclose($failas);
 }
 // Atspausdinam kur ant serverio yra failas:
-echo $failovieta;
+echo $failovieta;*/
 ?>
 <html>
 <head>
