@@ -10,8 +10,8 @@ else
 {
     // Jei Pavyko, į failą įrašom kažkokią informaciją: 
     fwrite($failas, "Irasau i faila varda ir atsakyma\r\n");
-    fwrite($failas, $_POST['vardas']."\r\n");
-    fwrite($failas, $_POST['atsakymas']."\r\n");
+    fwrite($failas, $_GET['vardas']."\r\n");
+    fwrite($failas, $_GET['atsakymas']."\r\n");
     fclose($failas);
 }
 // atspausdinam kur ant serverio yra failas:
@@ -25,7 +25,7 @@ echo $failoVieta;
 <body>
     Vardas: 
 <?php 
-$vardas = $_POST['vardas']; //$_GET['vardas'];
+$vardas = $_GET['vardas']; //$_GET['vardas'];
 if($vardas == "Donatas")
 {
     echo "Labas Donatai";
@@ -37,7 +37,7 @@ else
 ?>
 <br />
 Atsakymas
-<?=$_POST['atsakymas'] ?>
+<?=$_GET['atsakymas'] ?>
 <br/>
 matosi
 <a href="/Rezzultatai.txt">Parsisiusti rezultatu faila</a>
