@@ -9,9 +9,13 @@ if($failas === FALSE)
 else
 {
     // Jei Pavyko, į failą įrašom kažkokią informaciją: 
-    fwrite($failas, "Irasau i faila varda ir numeri\r\n");
+    fwrite($failas, "Irasau i faila varda ir isvada\r\n");
+    if($_POST['Vardas'] == "Lukas")
+    {
+        fwrite($failas,$_POST['Vardas']. "gavo i aki") 
+    }
     fwrite($failas, $_POST['Vardas']."\r\n");
-    fwrite($failas, $_POST['numeris']."\r\n");
+    
     fclose($failas);
 }
 echo $failoVieta."\r\n";
@@ -23,7 +27,7 @@ echo $failoVieta."\r\n";
 </head>
 <body>
     Numeriukas:
-    <?=$_POST['numeris'] ?>
+    <?=$_POST['Vardas'] ?>
     <br />
     <a href="numeriukuSpintele.txt">Numeriukai</a>
 </body>
