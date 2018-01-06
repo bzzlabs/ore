@@ -1,16 +1,16 @@
 <?php 
 $failovieta = $_SERVER['DOCUMENT_ROOT']."\kebabai.txt";
-$failas = fopen($failoVieta, "w");
+$failas = fopen($failovieta, "a");
 //pasitikrinti:
-if(failas === FALSE)
+if($failas === FALSE)
 {
-    echo "Nepavyko"
+    echo "Nepavyko";
 }
 else 
 {
     //Jei pavyko, irasyti kazokia informacija:
-    fwrite($failas, "Irasau i faila varda ir atsakyma\r\n");
-    fwrite($failas, $_POST['Romka']."\r\n");
+    fwrite($failas, "Irasau i faila varda ir atsakyma,");
+    fwrite($failas, $_POST['Romka'].",");
     fwrite($failas, $_POST['teisingas']."\r\n");
     fclose($failas);
 }
