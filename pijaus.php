@@ -21,3 +21,7 @@ echo $failoVieta."\r\n";
     <title>numeriukai free</title>
     <meta charset="utf-8" />
 </head>
+<body>
+    <a href="numeriukuSpintele.txt">Numeriukai</a>
+</body>
+</html>
