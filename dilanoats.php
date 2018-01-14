@@ -12,7 +12,7 @@ foreach ($lines2 as $line_num => $line) {
 
     } 
     else{
-       echo $line."<br />\n";
+       echo 'Teisingas Atsakymas'."<br />\n";
     }
     //echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
 }
