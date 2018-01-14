@@ -4,12 +4,12 @@ $failoVieta = $_SERVER['DOCUMENT_ROOT']."\Dilanas.txt";
 $lines = file($failoVieta);
 
 foreach ($lines as $line_num => $line) {
-
-    if ($line == "Karina"){
-        echo $line."<br />\n"; 
+    $pos = strpos($line, 'Karina');
+    if ($pos === FALSE){
+        echo "(".$line.") <br />\n"; 
     } 
     else{
-        echo "(".$line.") <br />\n";
+        echo "(".'Karina'.") <br />\n";
     }
     //echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
 }
