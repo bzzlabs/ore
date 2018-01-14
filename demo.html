@@ -5,11 +5,18 @@
         function testas()
         {
             var masyvas = ['bal','bul','red','donatas'];
-//for(var eilute in masyvas)
+for(var i in masyvas)
 
-for (var i = 0; i<masyvas.length; i+=2 )
+
+//for (var i = 0; i<masyvas.length; i+=2 )
 {
-    document.writeln(masyvas[i]);
+    
+    if (masyvas[i].indexOf("a")>=0) {
+        document.writeln(masyvas[i]);
+    }
+    else {
+        document.writeln("("+masyvas[i]+")");
+    }
 }
         }
 
