@@ -9,7 +9,7 @@ foreach ($lines as $line_num => $line) {
         echo "(".$line.") <br />\n"; 
     } 
     else{
-        echo "(".'Mandarinas man patinka'.") <br />\n";
+        echo "(".'Mandarinas'.") <br />\n";
     }
     //echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
 }
