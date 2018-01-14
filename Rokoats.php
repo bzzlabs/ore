@@ -6,10 +6,10 @@ $lines = file($failoVieta);
 foreach ($lines as $line_num => $line) {
     $pos = strpos($line, 'mandarinas');
     if ($pos === FALSE){
-        echo "(".$line.") <br />\n"; 
+     
     } 
     else{
-        echo "(".'mandarinas'.") <br />\n";
+        echo "(".$line.") <br />\n";
     }
     //echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
 }
