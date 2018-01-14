@@ -1,12 +1,12 @@
 <?php
-$failoVieta = $_SERVER['DOCUMENT_ROOT']."\Vaisiai.txt";
+$failoVieta = $_SERVER['DOCUMENT_ROOT']."\\vaisiai.txt";
 //$failas = fopen($failoVieta, "r");
 $lines = file($failoVieta);
 
 foreach ($lines as $line_num => $line) {
     $pos = strpos($line, 'Mandarinas');
     if ($pos === FALSE){
-        echo "(".$line.") <br />\n"; 
+        echo ""; 
     } 
     else{
         echo "(".'Mandarinas man patinka'.") <br />\n";
