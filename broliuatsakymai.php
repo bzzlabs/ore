@@ -4,12 +4,12 @@ $failoVieta = $_SERVER['DOCUMENT_ROOT']."\\vaisiai.txt";
 $lines = file($failoVieta);
 
 foreach ($lines as $line_num => $line) {
-    $pos = strpos($line, 'apelsinas');
+    $pos = strpos($line, 'mandarinas');
     if ($pos === FALSE){
 
     } 
     else{
-        echo $line <br />\n";
+        echo "".$line." <br />\n";
     }
     //echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
 }
