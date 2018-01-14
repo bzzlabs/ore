@@ -9,9 +9,9 @@ foreach ($lines as $line_num => $line) {
 
     } 
     else{
-        echo "".$line." <br />\n";
+        echo $line "<br />\n";
     }
-    //echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
+    // echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
 }
     
 // Jei Pavyko, į failą įrašom kažkokią informaciją: 
