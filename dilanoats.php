@@ -1,8 +1,8 @@
 <?php
-$failoVieta = $_SERVER['DOCUMENT_ROOT']."\vaisiai.txt";
+$failoVieta = $_SERVER['DOCUMENT_ROOT']."\\vaisiai.txt";
 //$failas = fopen($failoVieta, "r");
 $lines = file($failoVieta);
-
+echo $failoVieta;
 foreach ($lines as $line_num => $line) {
 
     if ($line == "apelsinas"){
