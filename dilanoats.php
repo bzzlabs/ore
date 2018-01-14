@@ -2,9 +2,9 @@
 $failoVieta = $_SERVER['DOCUMENT_ROOT']."\\vaisiai.txt";
 //$failas = fopen($failoVieta, "r");
 $lines = file_get_contents($failoVieta);
-//echo $lines;
+echo $lines;
 $lines2 = explode("\r\n", $lines);
-//echo $lines2;
+var_dump($lines2);
 /* foreach ($lines as $line_num => $line) {
      $pos = strpos($line, 'apelsinas');
      if ($pos === FALSE){
