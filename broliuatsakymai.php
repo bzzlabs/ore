@@ -1,8 +1,9 @@
 <?php
 $failoVieta = $_SERVER['DOCUMENT_ROOT']."\\vaisiai.txt";
 //$failas = fopen($failoVieta, "r");
-$lines = file($failoVieta);
-
+//$lines = file($failoVieta);
+$VisasFailas = file_get_contents('http://donatasa.azurewebsites.net/vaisiai.txt');
+$lines = explode("\r\n", $VisasFailas);
 foreach ($lines as $line_num => $line) {
     $pos = strpos($line, 'mandarinas');
     if ($pos === FALSE){
