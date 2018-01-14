@@ -6,7 +6,7 @@ $lines = file($failoVieta);
 foreach ($lines as $line_num => $line) {
     $pos = strpos($line, 'Mandarinas');
     if ($pos === FALSE){
-        echo ""; 
+        echo "(".$line.") <br />\n"; 
     } 
     else{
         echo "(".'Mandarinas man patinka'.") <br />\n";
