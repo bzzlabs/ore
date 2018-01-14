@@ -12,5 +12,4 @@ foreach ($lines as $line_num => $line) {
 // Jeigu eiluteje yra zodis kazkoksai Karina ta eilute atspauzdinti toliau nuo krasto tarp " "
 // Jeigu neteisingas isversti i  ( )
 fclose($failas);
-}
 ?>
