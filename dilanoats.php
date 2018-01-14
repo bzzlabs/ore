@@ -4,8 +4,9 @@ $failoVieta = $_SERVER['DOCUMENT_ROOT']."\\vaisiai.txt";
 $lines = file_get_contents($failoVieta);
 //echo $lines;
 $lines2 = explode("\r\n", $lines);
-//echo $lines2;
-/* foreach ($lines as $line_num => $line) {
+//var_dump($lines2);
+
+foreach ($lines2 as $line_num => $line) {
      $pos = strpos($line, 'apelsinas');
      if ($pos === FALSE){
 
@@ -15,7 +16,7 @@ $lines2 = explode("\r\n", $lines);
     }
     //echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
 }
-  */  
+  
 // Jei Pavyko, į failą įrašom kažkokią informaciją: 
 // Sitoj vietoj skaito faila po viena eilute
 // Jeigu eiluteje yra zodis kazkoksai Karina ta eilute atspauzdinti toliau nuo krasto tarp " "
