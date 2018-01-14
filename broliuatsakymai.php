@@ -1,9 +1,9 @@
 <?php
 $failoVieta = $_SERVER['DOCUMENT_ROOT']."\\vaisiai.txt";
-echo $failoVieta;
+// echo $failoVieta;
 //$failas = fopen($failoVieta, "r");
 //$lines = file($failoVieta);
-$VisasFailas = file_get_contents('http://donatasa.azurewebsites.net/vaisiai.txt');
+$VisasFailas = file_get_contents($failoVieta);
 // echo $VisasFailas;
  $lines = explode("\r\n", $VisasFailas);
 //  var_dump($lines);
