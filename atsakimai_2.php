@@ -1,7 +1,7 @@
 <?php
 $failoVieta = $_SERVER['DOCUMENT_ROOT']."\Dilanas.txt";
 //$failas = fopen($failoVieta, "r");
-$lines = file($failoVieta)
+$lines = file($failoVieta);
 
 foreach ($lines as $line_num => $line) {
     echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
