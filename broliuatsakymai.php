@@ -1,18 +1,22 @@
 <?php
 $failoVieta = $_SERVER['DOCUMENT_ROOT']."\\vaisiai.txt";
+// echo $failoVieta;
 //$failas = fopen($failoVieta, "r");
-$lines = file($failoVieta);
-
+//$lines = file($failoVieta);
+$VisasFailas = file_get_contents($failoVieta);
+// echo $VisasFailas;
+ $lines = explode("\r\n", $VisasFailas);
+//  var_dump($lines);
 foreach ($lines as $line_num => $line) {
-    $pos = strpos($line, 'mandarinas');
-    if ($pos === FALSE){
+     $pos = strpos($line, 'mandarinas');
+     if ($pos === FALSE){
 
-    } 
-    else{
-        echo $line "<br />\n";
-    }
+     } 
+     else{
+         echo $line . "<br />\n";
+     }
     // echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
-}
+ }
     
 // Jei Pavyko, į failą įrašom kažkokią informaciją: 
 // Sitoj vietoj skaito faila po viena eilute
