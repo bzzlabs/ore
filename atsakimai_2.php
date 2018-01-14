@@ -4,7 +4,14 @@ $failoVieta = $_SERVER['DOCUMENT_ROOT']."\Dilanas.txt";
 $lines = file($failoVieta);
 
 foreach ($lines as $line_num => $line) {
-    echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
+
+    if ($line == "Karina"){
+        echo $line."<br />\n"; 
+    } 
+    else{
+        echo "(".$line.")";
+    }
+    //echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
 }
     
 // Jei Pavyko, į failą įrašom kažkokią informaciją: 
