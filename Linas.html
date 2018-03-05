@@ -1,0 +1,34 @@
+<html>
+     <head>
+         <script>
+             function pauze () {
+                 var audio = document.getElementById("muzic")
+                 audio.pause();
+             }
+             function tatata (){
+                 var audio = document.getElementById("muzic")
+                 audio.play();
+             }
+             function kitas(){
+            var audio = document.getElementById("muzic")
+            audio.src = "file:///D:/Dokai/Downloads/John%20Legend%20-%20All%20of%20Me%20(Edited%20Video).mp3"
+            audio.play();
+
+             }
+             
+             
+         </script>
+     <title>batonas</title>
+     </head>
+     <body style="background: url('file:///D:/Dokai/Desktop/uitpakken-op-de-dansvloer-2.gif');background-size: 100%; background-repeat: no-repeat;">
+        <audio id="muzic" autoplay="autoplay">
+            <source src="file:///D:/Dokai/Downloads/MATRANG%20-%20%D0%BE%D1%82%20%D0%9B%D1%83%D0%BD%D1%8B%20%D0%B4%D0%BE%20%D0%9C%D0%B0%D1%80%D1%81%D0%B0%20(Jarico%20prod.).mp3"  >
+        </audio>
+        
+          <input type="button" onclick="pauze()" value="sustabdyti">
+    <input type="button" onclick="tatata()" value="paleisti">
+    <button onclick="document.getElementById('muzic').volume+=0.1">Increase Volume</button>
+  <button onclick="document.getElementById('muzic').volume-=0.1">Decrease Volume</button>
+   <input type="button" onclick="kitas()" value="keisti muzika">
+     </body>
+</html>
