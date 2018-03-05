@@ -1,0 +1,48 @@
+<html>
+    <head>
+            <!-- <meta http-equiv="content-type" content="text/html; charset=utf-8"> -->
+            <meta charset="utf-8">
+        <title>Jėzus Kristus</title>
+        <script>
+  function play(){
+       var muzoncikas = document.getElementById("muzonas");
+       muzoncikas.play();
+                 }
+     function grotkita(){
+       var muzoncikas = document.getElementById("muzonas");
+       muzoncikas.src = "file:///C:/Users/hpi5/Desktop/HANGOVER%20(Dynoro%20Remix).mp3";
+       muzoncikas.play();
+                 }
+    function stop(){
+        var muzoncikas = document.getElementById("muzonas");
+        muzoncikas.pause();
+                }
+    function PAGARSINTI(){
+        var muzoncikas = document.getElementById("muzonas").volume += 0.2;
+    }
+    function PATILDYTI(){
+        var muzoncikas = document.getElementById("muzonas").volume -= 0.2;
+    }
+    function PRASUKTIP(){
+        var muzoncikas = document.getElementById("muzonas");
+        muzoncikas.currentTime += 5;
+    }
+    function PRASUKTIM(){
+        var muzoncikas = document.getElementById("muzonas");
+        muzoncikas.currentTime -= 5;
+    }
+        </script>
+    </head>
+    <body style="background: url('file:///C:/Users/hpi5/Desktop/Wallpepers/israeli_audi_r8_v10-wallpaper-3554x1999.jpg') center; background-size: 100%" >
+        <audio id="muzonas">
+                <source src="file:///C:/Users/hpi5/Desktop/MATRANG%20-%20%D0%BE%D1%82%20%D0%9B%D1%83%D0%BD%D1%8B%20%D0%B4%D0%BE%20%D0%9C%D0%B0%D1%80%D1%81%D0%B0%20(Jarico%20prod.).mp3" />
+            </audio>
+        <input type="button" value="GROTI" onclick="play();" />
+        <input type="button" value="SUSTOTI" onclick="stop();" />
+        <input type="button" value="KEISTI MUZIKA" onclick="grotkita();" />
+        <input type="button" value="+PAGARSINTI" onclick="PAGARSINTI();" />
+        <input type="button" value="-PATILDYTI" onclick="PATILDYTI();" />
+        <input type="button" value="+PRASUKTI" onclick="PRASUKTIP();" />
+        <input type="button" value="-PRASUKTI" onclick="PRASUKTIM();" />
+    </body>
+</html>
